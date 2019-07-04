@@ -10,9 +10,11 @@
 
 ## Setup
 
+- Open current directory in Visual Source Code and run SFDX commands to authorize and org an deploy source to it. More [info](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component).
+
 - Create hybrid remote application with forcehybrid and use `/apex/xxx` as the start page (where xxx is one of the `./force-app/main/default/pages/xxx.page`).
 
-- Open current directory in Visual Source Code and run SFDX commands to authorize and org and deploy source to it. More [info](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/create-a-hello-world-lightning-web-component).
+- For quick development, make sure to attach Chrome to your Android emulator (Dev tools -> more tools -> remote devices). Simply do `location.reload()` from the console everytime you have deployed changes from Visual Source Code.
 
 ## Notes
 
