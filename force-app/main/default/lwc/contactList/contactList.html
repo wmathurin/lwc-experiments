@@ -1,0 +1,31 @@
+<template>
+	<lightning-card title="Contacts" icon-name="standard:contact">
+		<div class="slds-card__body_inner">
+			<!-- Start contact list -->
+			<template if:true={contacts}>
+				<lightning-layout multiple-rows="true" pull-to-boundary="small">
+					<template for:each={contacts} for:item="contact">
+						<lightning-layout-item key={contact.Id} size="3" class="slds-p-around_x-small">
+							<lightning-card title={contact.Name}>
+								<div class="slds-p-horizontal_small">
+                                    <div class="slds-media__body">
+                                        <p class="slds-m-bottom_xx-small">{contact.Email}</p>
+                                        <p class="slds-m-bottom_xx-small">{contact.MobilePhone}</p>
+                                        <p class="slds-m-bottom_xx-small">{contact.Department}</p>
+                                    </div>
+								</div>
+							</lightning-card>
+						</lightning-layout-item>
+					</template>
+				</lightning-layout>
+			</template>
+			<!-- End contact list -->
+			<!-- Data failed to load -->
+			<template if:true={error}>
+				<div class="slds-text-color_error">
+					{error}
+				</div>
+			</template>
+		</div>
+	</lightning-card>
+</template>
