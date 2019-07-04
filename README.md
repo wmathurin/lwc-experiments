@@ -22,6 +22,8 @@
 
 - Worked around the [Lightning Locker's Proxy](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/security_proxy.htm) object when getting data from bridge by doing JSON.parse(JSON.stringify(x)).
 
+- Code of interest: [Visual Force page](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/pages/ContactList.page) and [Lightning Web Component](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/lwc/contactList/contactList.js).
+
 ## Limitation / Next steps
 
 - Add iOS support.
