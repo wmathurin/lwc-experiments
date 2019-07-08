@@ -7,7 +7,7 @@ export default class ContactList extends LightningElement {
         this.loadContacts();
 	}
 	loadContacts() {
-        let soql = 'SELECT Id, Name, Email, MobilePhone, Department FROM Contact LIMIT 100';
+        let soql = 'SELECT Id, Name, MobilePhone, Department FROM Contact LIMIT 100';
         this.mobilesdk.force.query(soql, 
             (result) => {
                 this.contacts = result.records;

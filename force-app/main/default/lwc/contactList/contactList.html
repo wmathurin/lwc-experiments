@@ -3,21 +3,13 @@
 		<div class="slds-card__body_inner">
 			<!-- Start contact list -->
 			<template if:true={contacts}>
-				<lightning-layout multiple-rows="true" pull-to-boundary="small">
+				<ul class="slds-has-dividers_bottom-space">
 					<template for:each={contacts} for:item="contact">
-						<lightning-layout-item key={contact.Id} size="3" class="slds-p-around_x-small">
-							<lightning-card title={contact.Name}>
-								<div class="slds-p-horizontal_small">
-                                    <div class="slds-media__body">
-                                        <p class="slds-m-bottom_xx-small">{contact.Email}</p>
-                                        <p class="slds-m-bottom_xx-small">{contact.MobilePhone}</p>
-                                        <p class="slds-m-bottom_xx-small">{contact.Department}</p>
-                                    </div>
-								</div>
-							</lightning-card>
-						</lightning-layout-item>
-					</template>
-				</lightning-layout>
+						<li class="slds-item" key={contact.Id} >
+							<c-contact-list-item contact={contact}></c-contact-list-item>
+						</li>
+					</template>	
+				</ul>
 			</template>
 			<!-- End contact list -->
 			<!-- Data failed to load -->
