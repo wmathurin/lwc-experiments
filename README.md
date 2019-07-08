@@ -20,8 +20,6 @@
 
 - Getting bridge related objects in the Visual Force page and passing them to the LWC component. First tried importing 3rd party libraries directly into LWC component like [this](https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.create_third_party_library) but the different libraries do not see each other so they would have to first be merged into a single `.js` file.
 
-- Worked around the [Lightning Locker's Proxy](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/security_proxy.htm) object when getting data from bridge by doing JSON.parse(JSON.stringify(x)).
-
 ## Limitation / Next steps
 
 - Add iOS support.
