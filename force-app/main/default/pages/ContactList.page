@@ -1,9 +1,9 @@
-<apex:page sidebar="false" showHeader="false">
-<script src="{!URLFOR($Resource.bridge,'cordova.js')}"></script>
-<script src="{!URLFOR($Resource.bridge,'force.js')}"></script>
+<apex:page controller="ContactListController" sidebar="false" showHeader="false">
+<script src="{!URLFOR($Resource[cordovaBundle], 'cordova.js')}"></script>
+<script src="{!URLFOR($Resource.other,'force.js')}"></script>
+
 <apex:includeLightning />
 <div id="container"></div>
-
 <script>
     force.login(
     () => {
