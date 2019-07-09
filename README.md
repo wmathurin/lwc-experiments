@@ -23,9 +23,9 @@
 - Getting bridge related objects in the Visual Force page and passing them to the LWC component. First tried importing 3rd party libraries directly into LWC component like [this](https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.create_third_party_library) but the different libraries do not see each other so they would have to first be merged into a single `.js` file.
 
 ## Code of interest: 
-- [Apex controller](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/classes/ContactListController.cls) inspects user agent to decide what cordova files should be included.
+- [Apex controller](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/classes/ContactListController.cls): inspects user agent to decide what cordova files should be included.
 - [Lightning dependency app](https://github.com/wmathurin/lwc-experiments/tree/dev/force-app/main/default/aura/LightningDependencyApp).
-- [Visual Force page](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/pages/ContactList.page) imports cordova and force.js, create mobilesdk object with pointers to all plugins and pass it to the root LWC.
-- [Lightning Web Component for the list](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/lwc/contactList/contactList.js).
-- [Lightning Web Component for each list item](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/lwc/contactListItem/contactListItem.js).
+- [Visual Force page](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/pages/ContactList.page): imports cordova and force.js, create mobilesdk object with pointers to all plugins and pass it to the root LWC.
+- [Lightning Web Component for the list](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/lwc/contactList).
+- [Lightning Web Component for each list item](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/lwc/contactListItem).
 
