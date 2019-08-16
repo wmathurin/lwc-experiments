@@ -29,3 +29,5 @@
 - [Lightning Web Component for the list](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/lwc/contactList).
 - [Lightning Web Component for each list item](https://github.com/wmathurin/lwc-experiments/blob/dev/force-app/main/default/lwc/contactListItem).
 
+## Screenshot of /apex/ContactList
+![Screenshot](https://github.com/wmathurin/lwc-experiments/blob/dev/ContactListScreenshot.png)
